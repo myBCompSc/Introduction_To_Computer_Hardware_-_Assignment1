@@ -18,27 +18,27 @@ public class CLIBAdder implements LIBADDER_API
 	}
 
 	@Override
-	public float get_Input_Subset_parise0_valueA(Pointer obj) 
+	public float get_Input_Subset_praise0_valueA(Pointer obj) 
 	{
-		return CLIBAdder.INSTANCE.get_Input_Subset_parise0_valueA(obj);
+		return CLIBAdder.INSTANCE.get_Input_Subset_praise0_valueA(obj);
 	}
 
 	@Override
-	public float get_Input_Subset_parise0_valueB(Pointer obj) 
+	public float get_Input_Subset_praise0_valueB(Pointer obj) 
 	{
-		return CLIBAdder.INSTANCE.get_Input_Subset_parise0_valueB(obj);
+		return CLIBAdder.INSTANCE.get_Input_Subset_praise0_valueB(obj);
 	}
 
 	@Override
-	public void set_Input_Subset_parise0_valueA(Pointer obj, float newValue) 
+	public void set_Input_Subset_praise0_valueA(Pointer obj, float newValue) 
 	{
-		CLIBAdder.INSTANCE.set_Input_Subset_parise0_valueA(obj, newValue);		
+		CLIBAdder.INSTANCE.set_Input_Subset_praise0_valueA(obj, newValue);		
 	}
 
 	@Override
-	public void set_Input_Subset_parise0_valueB(Pointer obj, float newValue) 
+	public void set_Input_Subset_praise0_valueB(Pointer obj, float newValue) 
 	{
-		CLIBAdder.INSTANCE.set_Input_Subset_parise0_valueB(obj, newValue);
+		CLIBAdder.INSTANCE.set_Input_Subset_praise0_valueB(obj, newValue);
 	}
 
 }

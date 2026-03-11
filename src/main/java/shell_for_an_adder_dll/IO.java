@@ -42,21 +42,21 @@ public class IO
 	{
 		return CLIBAdder.INSTANCE.do_Add(obj);
 	}
-	public static float get_Input_Subset_parise0_valueA(Pointer obj)
+	public static float get_Input_Subset_praise0_valueA(Pointer obj)
 	{
-		return CLIBAdder.INSTANCE.get_Input_Subset_parise0_valueA(obj);
+		return CLIBAdder.INSTANCE.get_Input_Subset_praise0_valueA(obj);
 	}
-	public static float get_Input_Subset_parise0_valueB(Pointer obj)
+	public static float get_Input_Subset_praise0_valueB(Pointer obj)
 	{
-		return CLIBAdder.INSTANCE.get_Input_Subset_parise0_valueB(obj);
+		return CLIBAdder.INSTANCE.get_Input_Subset_praise0_valueB(obj);
 	}
-	public static void set_Input_Subset_parise0_valueA(Pointer obj, float newValue)
+	public static void set_Input_Subset_praise0_valueA(Pointer obj, float newValue)
 	{
-		CLIBAdder.INSTANCE.set_Input_Subset_parise0_valueA(obj, newValue);
+		CLIBAdder.INSTANCE.set_Input_Subset_praise0_valueA(obj, newValue);
 	}
-	public static void set_Input_Subset_parise0_valueB(Pointer obj, float newValue)
+	public static void set_Input_Subset_praise0_valueB(Pointer obj, float newValue)
 	{
-		CLIBAdder.INSTANCE.set_Input_Subset_parise0_valueB(obj, newValue);
+		CLIBAdder.INSTANCE.set_Input_Subset_praise0_valueB(obj, newValue);
 	}
 // private.
 	// dynamic.

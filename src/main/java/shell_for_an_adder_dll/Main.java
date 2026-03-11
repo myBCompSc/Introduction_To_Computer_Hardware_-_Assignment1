@@ -30,8 +30,8 @@ public class Main {
 		System.out.printf("SIMULATION%n");
 		
 		//SIMULATION TestBench.
-		IO.set_Input_Subset_parise0_valueA(pgmID_Adder, (float)4.6);
-		IO.set_Input_Subset_parise0_valueB(pgmID_Adder, (float)1.2);
+		IO.set_Input_Subset_praise0_valueA(pgmID_Adder, (float)4.6);
+		IO.set_Input_Subset_praise0_valueB(pgmID_Adder, (float)1.2);
 		double ans = IO.do_Add(pgmID_Adder);
 		System.out.printf("answer = " + ans + "%n");
 	}
