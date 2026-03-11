@@ -38,25 +38,25 @@ public class IO
 		System.out.printf("exiting dll.IO generate_Program().%n");
 		return stat_get_Framework_Ptr();
 	}
-	public static double do_Add(Pointer obj, float valueA, float valueB)
+	public static double do_Add(Pointer obj)
 	{
-		return CLIBAdder.INSTANCE.do_Add(obj, valueA, valueB);
+		return CLIBAdder.INSTANCE.do_Add(obj);
 	}
-	public static float reg_get_Input_Subset_parise0_valueA(Pointer obj)
+	public static float get_Input_Subset_parise0_valueA(Pointer obj)
 	{
-		return CLIBAdder.INSTANCE.reg_get_Input_Subset_parise0_valueA(obj);
+		return CLIBAdder.INSTANCE.get_Input_Subset_parise0_valueA(obj);
 	}
-	public static float reg_get_Input_Subset_parise0_valueB(Pointer obj)
+	public static float get_Input_Subset_parise0_valueB(Pointer obj)
 	{
-		return CLIBAdder.INSTANCE.reg_get_Input_Subset_parise0_valueB(obj);
+		return CLIBAdder.INSTANCE.get_Input_Subset_parise0_valueB(obj);
 	}
-	public static void reg_set_Input_Subset_parise0_valueA(Pointer obj, float newValue)
+	public static void set_Input_Subset_parise0_valueA(Pointer obj, float newValue)
 	{
-		CLIBAdder.INSTANCE.reg_set_Input_Subset_parise0_valueA(obj, newValue);
+		CLIBAdder.INSTANCE.set_Input_Subset_parise0_valueA(obj, newValue);
 	}
-	public static void reg_set_Input_Subset_parise0_valueB(Pointer obj, float newValue)
+	public static void set_Input_Subset_parise0_valueB(Pointer obj, float newValue)
 	{
-		CLIBAdder.INSTANCE.reg_set_Input_Subset_parise0_valueB(obj, newValue);
+		CLIBAdder.INSTANCE.set_Input_Subset_parise0_valueB(obj, newValue);
 	}
 // private.
 	// dynamic.
