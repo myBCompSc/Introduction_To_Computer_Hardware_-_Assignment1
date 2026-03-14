@@ -1,8 +1,8 @@
 # Introduction To Computer Hardware.
 
 ## ToDo:
-- JNI value mangling between java and c++.
-https://www.google.com/search?q=how+to+convert+c%2B%2B+float+to+java+float&rlz=1C1HKFL_enAU1205&oq=how+to+convert+c%2B%2B+float+to+java+float&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhB0gEIMTAwOGowajmoAgCwAgA&sourceid=chrome&ie=UTF-8
+- java.lang.UnsatisfiedLinkError: Error looking up function
+https://www.google.com/search?q=java.lang.UnsatisfiedLinkError%3A+Error+looking+up+function+&sca_esv=6e72ffa629272dce&rlz=1C1HKFL_enAU1205AU1205&sxsrf=ANbL-n62eZE97-jh8iOAcctRcxQFjNqbVg%3A1773483057616&ei=MTS1af-jJann2roP5dfuuAU&biw=974&bih=910&ved=0ahUKEwi_gKidk5-TAxWps1YBHeWrG1cQ4dUDCBQ&uact=5&oq=java.lang.UnsatisfiedLinkError%3A+Error+looking+up+function+&gs_lp=Egxnd3Mtd2l6LXNlcnAiOmphdmEubGFuZy5VbnNhdGlzZmllZExpbmtFcnJvcjogRXJyb3IgbG9va2luZyB1cCBmdW5jdGlvbiAyBhAAGBYYHjIGEAAYFhgeMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUitBlAAWABwAHgAkAEAmAHbAaAB2wGqAQMyLTG4AQPIAQD4AQGYAgGgAuABmAMAkgcDMi0xoAezBLIHAzItMbgH4AHCBwMyLTHIBwOACAA&sclient=gws-wiz-serp
 
 ## Using.
 ### Windows 11 Home.
