@@ -1,7 +1,5 @@
 # Introduction To Computer Hardware.
-
-## ToDo:
-- Exception in thread "main" java.lang.UnsatisfiedLinkError: Error looking up function 'generate_Program': The specified procedure could not be found.
+  
 ## Using.
 ### Windows 11 Home.
 
