@@ -9,7 +9,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 		System.out.printf("entered first member function, main()%n");
-		pgmPtr_MathApp = IO.generate_Program();
+		pgmPtr_MathApp = IO.app_generate_Program();
 		System.out.printf("%n");
 		System.out.printf("        ,     \\      /      ,%n");
 		System.out.printf("       / \\    )\\ __ /(     / \\ %n");

@@ -1,106 +1,92 @@
 package engine;
 
 import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 
 public class Global
 {
-// definitions.
-	// classes.
-	// registers.
-	private static char _numberOfCores;
-	private static char _numberOfPraises;
-	// programs.
-	
-// constructor.
+	private static char _stat_REG_numberOfCores;
+	private static char _stat_REG_numberOfPraises;
+// public.
 	public Global() 
 	{
 		System.out.printf("entering Global()%n");
-		stat_REG_create_numberOfCores();
-		stat_REG_create_numberOfPraises();
+		stat_CLASS_boot0_DECLAIRE_Global();
+		stat_CLASS_boot1_DEFINE_Global();
+		stat_CLASS_boot3_INITIALISE_Global();
+		stat_REG_boot0_DECLAIRE_Global();
 		System.out.printf("exiting Global()%n");
 	}
-	
-// public.
-	// dynamic.
-	public static float stat_BytesToFloat(byte[] bytes) 
+	public void dyn_REG_boot1_DEFINE_Global(Framework obj)
 	{
-        // Ensure the array is exactly 4 bytes long, as a float is 32 bits (4 bytes)
-        if (bytes.length != 4) {
-            throw new IllegalArgumentException("Byte array must have exactly 4 bytes.");
-        }
-        
-        // Wrap the byte array in a ByteBuffer
-        ByteBuffer buffer = ByteBuffer.wrap(bytes);
-        
-        // Set the byte order (optional, default is BIG_ENDIAN)
-        // Use ByteOrder.LITTLE_ENDIAN if your source data requires it
-        // buffer.order(ByteOrder.LITTLE_ENDIAN); 
-        
-        // Get the float value
-        return buffer.getFloat();
+		System.out.printf("entered dyn_REG_boot1_DEFINE_Global().%n");
+		
+		System.out.printf("exiting dyn_REG_boot1_DEFINE_Global().%n");
 	}
-    public static byte[] stat_FloatToBytes(float value) 
-    {
-        // Allocate a ByteBuffer with 4 bytes (size of a float)
-        ByteBuffer buffer = ByteBuffer.allocate(Float.BYTES);
-        
-        // Set to little-endian order
-        buffer.order(java.nio.ByteOrder.LITTLE_ENDIAN);
-        
-        // Put the float into the buffer
-        buffer.putFloat(value);
-        // Return the byte array
-        return buffer.array();
-    }
-		// get.
+	public void dyn_REG_boot2_SUBSTANTIATE_Global(Framework obj)
+	{
+		System.out.printf("entered dyn_REG_boot2_SUBSTANTIATE_Global().%n");
+		
+		System.out.printf("exiting dyn_REG_boot2_SUBSTANTIATE_Global().%n");
+	}
+	public void dyn_REG_boot3_INITIALISE_Global(Framework obj)
+	{
+		System.out.printf("entered dyn_REG_boot3_INITIALISE_Global().%n");
+		
+		System.out.printf("exiting dyn_REG_boot3_INITIALISE_Global().%n");
+	}
+	public void dyn_REG_boot4_INSTANTIATE_Global(Framework obj)
+	{
+		System.out.printf("entered dyn_REG_boot4_INSTANTIATE_Global().%n");
+		
+		System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Global().%n");
+	}
     public static char dyn_REG_get_numberOfCores()
 	{
 		return stat_REG_get_numberOfCores();
-		
 	}
     public static char dyn_REG_get_numberOfPraises()
 	{
 		return stat_REG_get_numberOfPraises();
 	}
-		// set.
-	// static.
-		// get.
-		// set.
-
+	public static float stat_BytesToFloat(byte[] bytes) 
+	{
+        if (bytes.length != 4) {
+            throw new IllegalArgumentException("Byte array must have exactly 4 bytes.");
+        }
+        ByteBuffer buffer = ByteBuffer.wrap(bytes);
+        return buffer.getFloat();
+	}
+    public static byte[] stat_FloatToBytes(float value) 
+    {
+        ByteBuffer buffer = ByteBuffer.allocate(Float.BYTES);
+        buffer.order(java.nio.ByteOrder.LITTLE_ENDIAN);
+        buffer.putFloat(value);
+        return buffer.array();
+    }
+	public void stat_CLASS_boot0_DECLAIRE_Global()
+	{
+		System.out.printf("entered stat_CLASS_boot0_DECLAIRE_Global().%n");
+		
+		System.out.printf("exiting stat_CLASS_boot0_DECLAIRE_Global().%n");
+	}
+	private static void stat_CLASS_boot1_DEFINE_Global()
+	{
+		System.out.printf("entered stat_CLASS_boot1_DEFINE_Global().%n");
+		
+		System.out.printf("exiting stat_CLASS_boot1_DEFINE_Global().%n");
+	}
+	private static void stat_CLASS_boot3_INITIALISE_Global()
+	{
+		System.out.printf("entered stat_CLASS_boot3_INITIALISE_Global().%n");
+		
+		System.out.printf("exiting stat_CLASS_boot3_INITIALISE_Global().%n");
+	}
+	private static void stat_REG_boot0_DECLAIRE_Global()
+	{
+		System.out.printf("entered stat_REG_boot0_DECLAIRE_Global().%n");
+		
+		System.out.printf("exiting stat_REG_boot0_DECLAIRE_Global().%n");
+	}
 // private.
-    // dynamic.
-        // get.
-        // set.
-    // static.
-		// classes.
-			// create.
-				// get.
-			// set.
-		// registers.
-			// create.
-	private static void stat_REG_create_numberOfCores()
-	{
-		System.out.printf("entering member function stat_REG_create_numberOfCores()%n");
-		_numberOfCores = 4;
-	}
-	private static void stat_REG_create_numberOfPraises()
-	{
-		System.out.printf("entering member function stat_REG_create_numberOfPraises()%n");
-		_numberOfPraises = 1;
-	}
-			// get.
-	private static char stat_REG_get_numberOfCores() 
-	{
-		return _numberOfCores;
-	}
-	private static char stat_REG_get_numberOfPraises()
-	{
-		return _numberOfPraises;
-	}
-			// set.
-		// programs.
-			// create.
-			// get.
-			// set.
+
 }
