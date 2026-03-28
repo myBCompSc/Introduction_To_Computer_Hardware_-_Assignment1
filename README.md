@@ -45,3 +45,6 @@ Build id: 20251204-0850
 
  ### MinGW.
   - https://sourceforge.net/projects/mingw-w64/
+
+### JavaFX.
+ - https://gluonhq.com/products/javafx/
