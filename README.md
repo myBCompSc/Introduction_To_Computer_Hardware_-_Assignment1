@@ -15,14 +15,14 @@ Build id: 20251204-0850
 
 ## Dependencies.
 ### Eclipse.
- - https://www.eclipse.org/downloads/
+ - https://www.eclipse.org/downloads/packages/release/2026-03/r/eclipse-ide-enterprise-java-and-web-developers
  
 ### The Java Development Kit (JDK).
- - https://www.eclipse.org/downloads/packages/ 
+ - https://www.oracle.com/anz/java/technologies/downloads/#java25
 
 ### Apache Maven. 
  - https://maven.apache.org/install.html
- 
+
 ### Java Native Access Library.
  - https://github.com/java-native-access/jna
 
