@@ -33,10 +33,7 @@ Version: 25.0.2.
 	</dependency>
 ````
 
-### MSYS2.
- - https://www.msys2.org/#installation
-
- ### MinGW.
-  - https://sourceforge.net/projects/mingw-w64/
+### Cygwin.
+- https://cygwin.com/install.html
 
 
