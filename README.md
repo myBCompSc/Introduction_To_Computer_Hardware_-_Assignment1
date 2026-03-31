@@ -2,14 +2,11 @@
   
 ## Using.
 ### Windows 11 Home.
+Version: 25H2.
+Build id: 26200.7840.
 
-Version: 25H2
-
-Build id: 26200.7840
-
-### Apache NetBeans IDE 
-
-Product Version: Apache NetBeans IDE 25.
+### Apache NetBeans IDE.
+Version: Apache NetBeans IDE 25.
 
 ## Dependencies.
 ### The Java Development Kit (JDK).
