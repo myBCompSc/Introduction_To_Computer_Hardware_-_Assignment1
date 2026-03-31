@@ -7,17 +7,13 @@ Version: 25H2
 
 Build id: 26200.7840
 
-### Eclipse 
+### Apache NetBeans IDE 
 
-Version: 2025-12 (4.38.0)
-
-Build id: 20251204-0850
+Product Version: Apache NetBeans IDE 25.
 
 ## Dependencies.
-### Eclipse.
- - https://www.eclipse.org/downloads/packages/release/2026-03/r/eclipse-ide-enterprise-java-and-web-developers
- 
 ### The Java Development Kit (JDK).
+Version: 25.0.2.
  - https://www.oracle.com/anz/java/technologies/downloads/#java25
 
 ### Apache Maven. 
