@@ -44,11 +44,11 @@ public class Assignment_1__the_dll {
                 double[] output = new double[1];
                 output[0] = (double)0.0;
     
-		IO.dyn_REG_set_praise0_Input_valueA(pgmPtr_MathApp, Global.stat_CONVERT_Float_To_Bytes(input[0][0]));
-                IO.dyn_REG_set_praise0_Input_valueB(pgmPtr_MathApp, Global.stat_CONVERT_Float_To_Bytes(input[0][1]));
+		IO.dyn_REG_set_praise0_Input_valueA(pgmPtr_MathApp, input[0][0]);
+                IO.dyn_REG_set_praise0_Input_valueB(pgmPtr_MathApp, input[0][1]);
                 IO.app_FUNCT_do_Add(pgmPtr_MathApp);
                 
-                output[0] = Global.stat_CONVERT_Bytes_To_Float(IO.dyn_REG_get_praise0_Output_value(pgmPtr_MathApp));
+                output[0] = IO.dyn_REG_get_praise0_Output_value(pgmPtr_MathApp);
                 
                 System.out.println("a = " + input[0][0] + " b = " + input[0][1] + " ADD a b => " + output[0]);
 	}

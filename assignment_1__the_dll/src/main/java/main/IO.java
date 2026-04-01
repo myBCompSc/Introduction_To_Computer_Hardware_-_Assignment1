@@ -1,6 +1,6 @@
 package main;
 
-import com.sun.jna.Pointer;
+
 import engine.Framework;
 import engine.Global;
 import lib.DllLoader;
@@ -8,6 +8,7 @@ import lib.DllLoader;
 public class IO 
 {
 	public static Framework _stat_CLASS_framework;
+
 // public.
         public static Framework app_generate_Program()
 	{
@@ -45,39 +46,40 @@ public class IO
         {
             try {
                 DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_do_Add(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr());
-            } 
+            }
             catch (NullPointerException e) {
                     System.out.printf("NullPointerException.%n");
             }
         }
 	// Praise_0.
-	public static void dyn_REG_set_praise0_Input_valueA(Framework obj, byte[] bytes)
+	public static void dyn_REG_set_praise0_Input_valueA(Framework obj, float newFloat)
 	{
             try {
-                DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_set_Input_Subset_praise0_valueA(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr(), bytes);
+                DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_set_Input_Subset_praise0_valueA(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr(), Global.stat_CONVERT_Float_To_Bytes(newFloat));
             } 
             catch (NullPointerException e) {
                     System.out.printf("NullPointerException.%n");
             }
 	}
-	public static void dyn_REG_set_praise0_Input_valueB(Framework obj, byte[] bytes)
+	public static void dyn_REG_set_praise0_Input_valueB(Framework obj, float newFloat)
 	{
             try {
-                DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_set_Input_Subset_praise0_valueB(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr(), bytes);
+                DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_set_Input_Subset_praise0_valueB(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr(), Global.stat_CONVERT_Float_To_Bytes(newFloat));
             } 
             catch (NullPointerException e) {
                     System.out.printf("NullPointerException.%n");
             }
 	}
-	public static byte[] dyn_REG_get_praise0_Output_value(Framework obj)
+	public static double dyn_REG_get_praise0_Output_value(Framework obj)
 	{
+            double tempDouble = 0.0;
             try {
-                DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_get_Output_Subset_praise0_value(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr());
+                tempDouble = Global.stat_CONVERT_Bytes_To_Double(DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_get_Output_Subset_praise0_value(obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_PGM_get_LibAdder_ptr()));
             } 
             catch (NullPointerException e) {
                     System.out.printf("NullPointerException.%n");
             }
-		return null;
+            return tempDouble;
 	}
 // private.
 	private static void stat_CLASS_boot1_DEFINE_framework()

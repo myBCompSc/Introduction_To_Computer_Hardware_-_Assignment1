@@ -2,6 +2,7 @@ package engine;
 
 import lib.DllLoader.LIBADDER_API;
 import com.sun.jna.Pointer;
+import lib.DllLoader;
 
 public class Execute 
 {
@@ -78,8 +79,9 @@ public class Execute
 	private static void stat_PGM_boot3_INITIALISE_LibraryPrograms()
 	{
 		System.out.printf("entered Execute stat_PGM_boot3_INITIALISE_LibraryPrograms().%n");
-		try {
-			_stat_PGM_LibAdder = LIBADDER_API.INSTANCE.app_FUNCT_generate_Program();
+		DllLoader JavaLIBADDER_API = new DllLoader();
+                try {
+			_stat_PGM_LibAdder = DllLoader.LIBADDER_API.INSTANCE.app_FUNCT_generate_Program();
 		} 
                 catch (UnsatisfiedLinkError e) {
 			System.out.printf("UnsatisfiedLinkError.%n");

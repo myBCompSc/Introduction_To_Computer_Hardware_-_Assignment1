@@ -57,11 +57,25 @@ public class Global
     ByteBuffer buffer = ByteBuffer.wrap(bytes);
     return buffer.getFloat();
     }
+    public static double stat_CONVERT_Bytes_To_Double(byte[] bytes) 
+    {
+    if (bytes.length != 8) {
+        throw new IllegalArgumentException("Byte array must have a length of 8");
+    }
+    ByteBuffer buffer = ByteBuffer.wrap(bytes);
+    return buffer.getDouble();
+    }
     public static byte[] stat_CONVERT_Float_To_Bytes(float value) 
     {
         ByteBuffer buffer = ByteBuffer.allocate(Float.BYTES);
         buffer.order(java.nio.ByteOrder.LITTLE_ENDIAN);
         buffer.putFloat(value);
+        return buffer.array();
+    }
+    public static byte[] stat_CONVERT_Double_To_Bytes(double value) 
+    {
+        ByteBuffer buffer = ByteBuffer.allocate(Double.BYTES);
+        buffer.putDouble(value);
         return buffer.array();
     }
 	public void stat_CLASS_boot0_DECLAIRE_Global()
