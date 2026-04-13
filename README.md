@@ -1,12 +1,16 @@
 # Introduction To Computer Hardware.
   
 ## Using.
-### Windows 11 Home.
-Version: 25H2.
-Build id: 26200.7840.
+### Linux - Ubuntu.
+Version: 24.04.4 LTS.
 
-### Apache NetBeans IDE.
-Version: Apache NetBeans IDE 25.
+Build id: 26200.7840
+
+### IntelliJ IDEA.
+Version: 2026.1.
+Build #IU-261.22158.277, built on March 25, 2026.
+
+Runtime version: 25.0.2+10-b329.72 amd64 (JCEF 137.0.17-261-b65).
 
 ## Dependencies.
 ### The Java Development Kit (JDK).
