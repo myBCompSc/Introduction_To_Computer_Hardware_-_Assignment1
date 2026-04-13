@@ -2,7 +2,7 @@ package introduction_to_hardware.assignment_1__the_dll;
 
 import engine.Framework;
 import engine.Global;
-import main.IO;
+import main.Math;
 
 public class Assignment_1__the_dll {
 
@@ -11,7 +11,7 @@ public class Assignment_1__the_dll {
 	public static void main(String[] args) 
 	{
 		System.out.printf("entered first member function, main()%n");
-		pgmPtr_MathApp = IO.app_generate_Program();
+		pgmPtr_MathApp = Math.app_generate_Program();
 		System.out.printf("%n");
 		System.out.printf("        ,     \\      /      ,%n");
 		System.out.printf("       / \\    )\\ __ /(     / \\ %n");
@@ -37,19 +37,20 @@ public class Assignment_1__the_dll {
 		System.out.printf("running.%n");
 		System.out.printf("==========%n");
 		System.out.printf("SIMULATION%n");
-                
-                float[][] input = new float[1][];
-                input[0] = new float[] { (float)1.2, (float)2.4 };
-                
-                double[] output = new double[1];
-                output[0] = (double)0.0;
-    
-		IO.dyn_REG_set_praise0_Input_valueA(pgmPtr_MathApp, input[0][0]);
-                IO.dyn_REG_set_praise0_Input_valueB(pgmPtr_MathApp, input[0][1]);
-                IO.app_FUNCT_do_Add(pgmPtr_MathApp);
-                
-                output[0] = IO.dyn_REG_get_praise0_Output_value(pgmPtr_MathApp);
-                
-                System.out.println("a = " + input[0][0] + " b = " + input[0][1] + " ADD a b => " + output[0]);
+
+		Math.app_PRAISE_set_Input_value_a(Global.stat_CONVERT_Float_To_Bytes((float)(1.2)));
+		Math.app_PRAISE_set_Input_value_b(Global.stat_CONVERT_Float_To_Bytes((float)(2.6)));
+
+		Math.app_FUNCT_add_a_b();
+		System.out.printf("a + b = " + Global.stat_CONVERT_Bytes_To_Double(Math.app_PRAISE_get_Output_value()));
+
+		Math.app_FUNCT_divide_a_b();
+		System.out.printf("a / b = " + Global.stat_CONVERT_Bytes_To_Double(Math.app_PRAISE_get_Output_value()));
+
+		Math.app_FUNCT_multiply_a_b();
+		System.out.printf("a * b = " + Global.stat_CONVERT_Bytes_To_Double(Math.app_PRAISE_get_Output_value()));
+
+		Math.app_FUNCT_multiply_a_b();
+		System.out.printf("a - b = " + Global.stat_CONVERT_Bytes_To_Double(Math.app_PRAISE_get_Output_value()));
 	}
 }

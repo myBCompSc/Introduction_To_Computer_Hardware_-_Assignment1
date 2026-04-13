@@ -1,11 +1,12 @@
 package engine;
 
 import com.sun.jna.Pointer;
-import lib.LIBADDER_API;
+import lib.LIBMATH_API;
+import main.Math;
 
 public class Execute 
 {
-	private static Pointer _stat_PGM_LibAdder;
+	private static Pointer _stat_PGM_LibMath;
 // public.
 	public Execute() 
 	{
@@ -34,10 +35,23 @@ public class Execute
 		
 		System.out.printf("exiting dyn_REG_boot3_INITIALISE_Execute().%n");
 	}
-	public void dyn_REG_boot4_INSTANTIATE_Execute(Framework obj)
+	public void dyn_REG_boot4_INSTANTIATE_Execute()
 	{
 		System.out.printf("entered dyn_REG_boot4_INSTANTIATE_Execute().%n");
-		
+		Math.app_FUNCT_add_a_b();
+		Math.app_FUNCT_divide_a_b();
+		//Math.app_FUNCT_generate_Program();
+		Math.app_FUNCT_multiply_a_b();
+		Math.app_FUNCT_subtract_a_b();
+		Math.app_FUNCT_terminate_Program();
+		var temp0 = Math.app_PRAISE_get_Output_value();
+		var temp1 = Math.app_PRAISE_get_Input_value_a();
+		var temp2 = Math.app_PRAISE_get_Input_value_b();
+		byte[] bytes = Global.stat_CONVERT_Double_To_Bytes(Double.MAX_VALUE);
+		Math.app_PRAISE_set_Output_value(bytes);
+		bytes = Global.stat_CONVERT_Float_To_Bytes(Float.MAX_VALUE);
+		Math.app_PRAISE_set_Input_value_a(bytes);
+		Math.app_PRAISE_set_Input_value_b(bytes);
 		System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Execute().%n");
 	}
 	public Pointer dyn_PGM_get_LibAdder_ptr()
@@ -72,16 +86,16 @@ public class Execute
 	private static void stat_PGM_boot1_DEFINE_LibraryPrograms()
 	{
 		System.out.printf("entered Execute initialise_Programs().%n");
-		_stat_PGM_LibAdder = null;
+		_stat_PGM_LibMath = null;
 		System.out.printf("exiting Execute initialise_Programs().%n");
 	}
 	private static void stat_PGM_boot3_INITIALISE_LibraryPrograms()
 	{
 		System.out.printf("entered Execute stat_PGM_boot3_INITIALISE_LibraryPrograms().%n");
-                try {
-                    _stat_PGM_LibAdder = LIBADDER_API.INSTANCE.app_FUNCT_generate_Program();
-     		} 
-                catch (UnsatisfiedLinkError e) {
+		try {
+			_stat_PGM_LibMath = LIBMATH_API.INSTANCE.app_FUNCT_generate_Program();
+		}
+		catch (UnsatisfiedLinkError e) {
 			System.out.printf("UnsatisfiedLinkError.%n");
 		}
                 catch (NoClassDefFoundError e) {
@@ -94,6 +108,6 @@ public class Execute
 	}
 	private static Pointer stat_PGM_get_LibAdder()
 	{
-		return _stat_PGM_LibAdder;
+		return _stat_PGM_LibMath;
 	}
 }

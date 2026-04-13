@@ -38,7 +38,7 @@ public class Framework
 	public void dyn_REG_boot4_INSTANTIATE_Framework_App(Framework obj)
 	{
 		System.out.printf("entered dyn_REG_boot4_INSTANTIATE_Framework_App().%n");
-		
+		obj.dyn_CLASS_get_App().dyn_CLASS_get_Execute().dyn_REG_boot4_INSTANTIATE_Execute();
 		System.out.printf("exiting dyn_REG_boot4_INSTANTIATE_Framework_App().%n");
 	}
 	public void stat_CLASS_boot0_DECLAIRE_Framework_App()
